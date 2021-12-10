@@ -66,9 +66,10 @@
             type="password"
             name=""
             id="password1"
-            placeholder="Create password"
+            placeholder="Create password (Min. 8 characters)"
             required
             pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            title="Please include at least 1 Uppercase character, 1 Lowercase character and 1 number"
           />
         </div>
         <div class="form-group">
@@ -82,10 +83,10 @@
             pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
           />
         </div>
-        <button type="submit">Register</button>
+        <button type="submit" id="button">Register</button>
         <!-- Error/Success Message -->
         <div class="message-container">
-          <h3 id="message">Thank you for registering</h3>
+          <h3 id="message">DON'T LOSE OUT. REGISTER NOW</h3>
         </div>
       </form>
     </div>
