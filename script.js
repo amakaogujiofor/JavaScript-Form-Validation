@@ -20,7 +20,6 @@ function validateForm() {
     button.textContent = "OOPS TRY AGAIN";
     password1El.style.borderColor = "red";
     password2El.style.borderColor = "red";
-    return;
   }
   //   Form Valid and Passwords Match
   if (isValid && passwordsMatch) {
@@ -28,13 +27,26 @@ function validateForm() {
     button.textContent = "SUBMITTED";
     password1El.style.borderColor = "green";
     password2El.style.borderColor = "green";
-    return;
   }
+}
+
+function storeFromData(){
+    const user = {
+        name = form.name.value,
+        phone = form.phone.value,
+        email = form.email.value,
+        website = form.website.value,
+        password = form.password1.value
+    }
+    console.log(user)
 }
 
 function handleForm(e) {
   e.preventDefault();
   validateForm();
+  if (isValid && passwordsMatch) {
+      storeFromData();
+  }
 }
 
 form.addEventListener("submit", handleForm);
