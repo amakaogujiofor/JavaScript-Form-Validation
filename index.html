@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up Today!</h1>
+      <form id="form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" name="" id="name" placeholder="Full Name" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="" id="phone" placeholder="555-555-5555" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Number</label>
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="email@address.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="website">Website</label>
+          <input
+            type="url"
+            name=""
+            id="website"
+            placeholder="htttp://google.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password1">Password</label>
+          <input
+            type="password"
+            name=""
+            id="password1"
+            placeholder="Create password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            name=""
+            id="password2"
+            placeholder="Confirm password"
+          />
+        </div>
+        <button type="submit">Register</button>
+        <!-- Error/Success Message -->
+        <div class="message-container">
+          <h3 id="message">Thank you for registering</h3>
+        </div>
+      </form>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
