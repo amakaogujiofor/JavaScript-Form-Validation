@@ -19,19 +19,35 @@
       <form id="form">
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" name="" id="name" placeholder="Full Name" />
+          <input
+            type="text"
+            name=""
+            id="name"
+            placeholder="Full Name"
+            required
+            minlength="3"
+            maxlength="100"
+          />
         </div>
         <div class="form-group">
           <label for="phone">Phone Number</label>
-          <input type="tel" name="" id="phone" placeholder="555-555-5555" />
+          <input
+            type="tel"
+            name=""
+            id="phone"
+            placeholder="555-555-5555"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
         </div>
         <div class="form-group">
-          <label for="email">Email Number</label>
+          <label for="email">Email Address</label>
           <input
             type="email"
             name=""
             id="email"
             placeholder="email@address.com"
+            required
           />
         </div>
         <div class="form-group">
@@ -41,6 +57,7 @@
             name=""
             id="website"
             placeholder="htttp://google.com"
+            required
           />
         </div>
         <div class="form-group">
@@ -50,6 +67,8 @@
             name=""
             id="password1"
             placeholder="Create password"
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
           />
         </div>
         <div class="form-group">
@@ -59,6 +78,8 @@
             name=""
             id="password2"
             placeholder="Confirm password"
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
           />
         </div>
         <button type="submit">Register</button>
