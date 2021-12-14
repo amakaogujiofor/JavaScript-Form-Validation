@@ -106,3 +106,19 @@ button:focus {
   font-size: 0.7rem;
   text-transform: uppercase;
 }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+}
+
+span {
+  color: #fff;
+}
+
+span:hover {
+  color: #c3a1f3de;
+}
